@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net35;net40;net60;net80</TargetFrameworks>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <Authors>openzzl</Authors>
+	<FileVersion>0.0.1</FileVersion>
+	<VersionPrefix>0.0.1</VersionPrefix>
+  </PropertyGroup>
+  
+  <ItemGroup Condition="'$(TargetFramework)' == 'net60'">
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+  </ItemGroup>
+  
+  <ItemGroup Condition="'$(TargetFramework)' == 'net80'">
+    <PackageReference Include="System.Drawing.Common" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>

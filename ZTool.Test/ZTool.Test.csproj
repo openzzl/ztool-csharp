@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net40</TargetFrameworks>
+	<FileVersion>0.0.1</FileVersion>
+	<VersionPrefix>0.0.1</VersionPrefix>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZTool.Core\ZTool.Core.csproj" />
+  </ItemGroup>
+
+</Project>
