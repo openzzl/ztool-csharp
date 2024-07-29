@@ -2,11 +2,22 @@
 
   <PropertyGroup>
     <TargetFrameworks>net35;net40;net60;net80</TargetFrameworks>
-    <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <Authors>openzzl</Authors>
+	<GenerateDocumentationFile>True</GenerateDocumentationFile>
 	<FileVersion>0.0.1</FileVersion>
 	<VersionPrefix>0.0.1</VersionPrefix>
+    <Authors>openzzl</Authors>
+	<Copyright>Copyright © openzzl 2024</Copyright>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<PackageProjectUrl>https://github.com/openzzl/ztool-csharp</PackageProjectUrl>
+	<PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
   </PropertyGroup>
+  
+  <ItemGroup>
+    <None Remove="**\*.orig" />
+    <None Include="..\LICENSE" Pack="true" PackagePath="LICENSE" />
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
   
   <ItemGroup Condition="'$(TargetFramework)' == 'net60'">
     <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
